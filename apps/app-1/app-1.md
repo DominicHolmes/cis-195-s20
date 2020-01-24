@@ -60,7 +60,7 @@ As you read, be sure to hit the "play" button to see results. Don't be afraid to
 - Complete the following exercises.
 
 ### Exercise 0
-- Write a multi-line comment (with `/* ... */`) that includes your name, pennkey, the tutorial number (1), and what you're looking forward to most in CIS 195.
+- Write a multi-line comment (with `/* ... */`) that includes your name, pennkey, the app number (1), and what you're looking forward to most in CIS 195.
 
 ### Exercise 1: Types, Constants, Variables, Optionals
 Skim through: [The Basics](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID309) and then [Basic Operators](https://docs.swift.org/swift-book/LanguageGuide/BasicOperators.html#//apple_ref/doc/uid/TP40014097-CH6-ID60).
@@ -146,7 +146,7 @@ Read: [Properties](https://docs.swift.org/swift-book/LanguageGuide/Properties.ht
 ---
 
 ## Done 🎉
-Congratulations on finishing this tutorial! Hopefully, it helped you gain an introductory understanding of the Swift language. You also got a chance to play around with the Playground, which is commonly used by developers to test code snippets. You are definitely not expected to remember everything you just read. However by now, you should have the foundations in place to explore iOS development without a “language barrier”.
+Congratulations on finishing this app! Hopefully, it helped you gain an introductory understanding of the Swift language. You also got a chance to play around with the Playground, which is commonly used by developers to test code snippets. You are definitely not expected to remember everything you just read. However by now, you should have the foundations in place to explore iOS development without a “language barrier”.
 
 Keep in mind that when you start developing iOS apps, the [Swift documentation](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html) will become your best friend. So it would be a good idea to spend some time getting accustomed to it early on.
 
