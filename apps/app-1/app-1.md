@@ -44,9 +44,7 @@ However when skimming the documentation in Exercises 0-7, don't worry if you don
 - Download [Swift: A Guided Tour](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.playground.zip)
 - Open the file in XCode -- this is a "playground book"
 - Open `answers.txt`.
-- Read through the entire book (9 pages). For each page, add a new paragraph to `answers.txt` summarizing what you learned on that page. Each paragraph should have 3-4 sentences. Please clearly mark what page you are summarizing.
-
-Notice **there are 9 pages**! Make sure you understand all of them.
+- Read through the entire book (8 pages). Make sure you understand all of them. For each page, add a new paragraph to `answers.txt` summarizing what you learned on that page. Each paragraph should have 3-4 sentences. Please clearly mark what page you are summarizing.
 
 As you read, be sure to hit the "play" button to see results. Don't be afraid to play around and change the code, that's what it's there for!
 
