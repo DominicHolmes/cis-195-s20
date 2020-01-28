@@ -135,9 +135,7 @@ In Swift, classes and structures can have **properties**, and a property in Swif
 Read: [Properties](https://docs.swift.org/swift-book/LanguageGuide/Properties.html#//apple_ref/doc/uid/TP40014097-CH14-ID262)
 
 - Within the struct ‘Rectangle’, define a new property `area` with a getter that returns the product of `length` and `width`.
-- In the same struct, define a property `description` of type `String?`. Implement a didSet observer that prints the unwrapped value of `description` if the property is non-nil. 
-- Note that after adding the new properties, your compiler should be complaining that the initializer is missing an argument. Note how structs magically re-generate initializers as the properties are modified.
-- Fix the error by adding in the description parameter
+- In the same struct, define a property `description` of type `String?`. Implement a didSet observer that prints the unwrapped value of `description` if the property is non-nil.
 - Set the `description`  of `myRect` to be `"This is my rectangle."` It should print that statement. 
 - Print the `area` of `myRect`.
 
