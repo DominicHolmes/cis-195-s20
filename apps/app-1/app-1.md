@@ -100,7 +100,7 @@ Skim through: [Functions](https://docs.swift.org/swift-book/LanguageGuide/Functi
     + Take in a `Course` with argument label "in" and parameter name "course"
     + Take in an `PennId` with argument label "using" and parameter name "pennId"
     + Return nothing
-    + Calling the function should result in the string "Enrolled <penn_id> in <course>" being printed
+    + Calling the function should result in the string "Enrolled <penn_id> in <the_course>" being printed
 - Define a String constant `newCourse` and Int constant `myPennId`. Call the function with them.
 
 ### Exercise 5: Enumerations
