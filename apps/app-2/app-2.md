@@ -1,4 +1,4 @@
-# App 1: Tic Tac Toe
+# App 2: Tic Tac Toe
 
 Discuss this app & get help on [Piazza](https://tiny.cc/cis195-piazza).
 Please leave feedback by creating a GitHub issue or by posting on Piazza.
@@ -19,7 +19,7 @@ This assignment has 2 parts. Part A covers the interface and app structure, and 
 * Learn about interface builder and swift
 * Get familiar with UIViewController, UIButton, UILabel, and UIView
 
-![](/apps/app-1/assets/fig1.png?raw=true)
+![](/apps/app-2/assets/fig1.png?raw=true)
 
 ## Topics
 
@@ -52,7 +52,7 @@ This assignment has 2 parts. Part A covers the interface and app structure, and 
 
 ## Step 1: Import assets
 * Using the file menu on the left, open `Assets.xcassets`.
-* Download the image assets from [this link](/apps/app-1/assets/app-1-assets.zip) (click 'download').
+* Download the image assets from [this link](/apps/app-2/assets/app-2-assets.zip) (click 'download').
 * There will be 3 image files for each symbol -- this is to account for different iPhone screen resolutions. [More info if you're curious.](https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/image-size-and-resolution/).
 * Drag all 9 of the image files into your assets file; this is called an "Asset Catalog".
 

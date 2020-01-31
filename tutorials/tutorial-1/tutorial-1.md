@@ -42,7 +42,7 @@ Watch from 0:37 to 11:58:
 
 # View Controller Life Cycle
 
-![](/tutorials/tutorial-2/assets/fig1.png?raw=true)
+![](/tutorials/tutorial-1/assets/fig1.png?raw=true)
 
 Any non-trivial iPhone app will have multiple screens. Those screens may appear and disappear many times while the app is running. It's important to "hook in" to this life cycle, and perform specific actions at specific times.
 
@@ -56,7 +56,7 @@ Watch from 00:00 to 10:00: [Stanford - View Controller Life Cycle](https://www.y
 
 *Optional reading: Similarly, apps have a life cycle too. Certain events happen to every app: app gets opened, app finished loading, app exited etc. [This article](https://medium.com/@neroxiao/ios-app-life-cycle-ec1b31cee9dc) describes the possible states your app can flow through. Don't worry if you don't understand everything on these diagrams - they're quite dense.*
 
-![](/tutorials/tutorial-2/assets/fig2.png?raw=true)
+![](/tutorials/tutorial-1/assets/fig2.png?raw=true)
 
 You should understand the following:
 * Apps have a predicted life cycle, governed by the different methods inside `AppDelegate`.
