@@ -44,9 +44,7 @@ However when skimming the documentation in Exercises 0-7, don't worry if you don
 - Download [Swift: A Guided Tour](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.playground.zip)
 - Open the file in XCode -- this is a "playground book"
 - Open `answers.txt`.
-- Read through the entire book (9 pages). For each page, add a new paragraph to `answers.txt` summarizing what you learned on that page. Each paragraph should have 3-4 sentences. Please clearly mark what page you are summarizing.
-
-Notice **there are 9 pages**! Make sure you understand all of them.
+- Read through the entire book (8 pages). Make sure you understand all of them. For each page, add a new paragraph to `answers.txt` summarizing what you learned on that page. Each paragraph should have 3-4 sentences. Please clearly mark what page you are summarizing.
 
 As you read, be sure to hit the "play" button to see results. Don't be afraid to play around and change the code, that's what it's there for!
 
@@ -102,7 +100,7 @@ Skim through: [Functions](https://docs.swift.org/swift-book/LanguageGuide/Functi
     + Take in a `Course` with argument label "in" and parameter name "course"
     + Take in an `PennId` with argument label "using" and parameter name "pennId"
     + Return nothing
-    + Calling the function should result in the string "Enrolled <pennId> in <course>" being printed
+    + Calling the function should result in the string "Enrolled <penn_id> in <the_course>" being printed
 - Define a String constant `newCourse` and Int constant `myPennId`. Call the function with them.
 
 ### Exercise 5: Enumerations
@@ -137,9 +135,7 @@ In Swift, classes and structures can have **properties**, and a property in Swif
 Read: [Properties](https://docs.swift.org/swift-book/LanguageGuide/Properties.html#//apple_ref/doc/uid/TP40014097-CH14-ID262)
 
 - Within the struct ‘Rectangle’, define a new property `area` with a getter that returns the product of `length` and `width`.
-- In the same struct, define a property `description` of type `String?`. Implement a didSet observer that prints the unwrapped value of `description` if the property is non-nil. 
-- Note that after adding the new properties, your compiler should be complaining that the initializer is missing an argument. Note how structs magically re-generate initializers as the properties are modified.
-- Fix the error by adding in the description parameter
+- In the same struct, define a property `description` of type `String?`. Implement a didSet observer that prints the unwrapped value of `description` if the property is non-nil.
 - Set the `description`  of `myRect` to be `"This is my rectangle."` It should print that statement. 
 - Print the `area` of `myRect`.
 
