@@ -48,7 +48,7 @@ This assignment has 2 parts. Part A covers the interface and app structure, and 
 * Open Xcode
 * Select "new project" from the start screen, or use File > New > Project in the menu bar
 * Select "Single View Application"
-* Name the project "app1_lastname_firstname"
+* Name the project "app2_lastname_firstname"
 
 ## Step 1: Import assets
 * Using the file menu on the left, open `Assets.xcassets`.
@@ -97,7 +97,7 @@ At this point your app should be crash free and support the following:
 * The app should look good in both light and darkmode.
 
 ## Submission
-Zip your *entire project folder*. Do this in the Finder by finding the **highest level folder** named "app1_lastname_firstname" and zipping that. This folder should include **both** the .xcproject file and a subfolder also named "app1_lastname_firstname". 
+Zip your *entire project folder*. Do this in the Finder by finding the **highest level folder** named "app2_lastname_firstname" and zipping that. This folder should include **both** the .xcproject file and a subfolder also named "app2_lastname_firstname". 
 
 We need both of these, make sure to zip them all! Name the zipped file app1a_lastname_firstname.zip and submit it on canvas.
 
