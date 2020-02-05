@@ -99,7 +99,7 @@ At this point your app should be crash free and support the following:
 ## Submission
 Zip your *entire project folder*. Do this in the Finder by finding the **highest level folder** named "app1_lastname_firstname" and zipping that. This folder should include **both** the .xcproject file and a subfolder also named "app1_lastname_firstname". 
 
-We need both of these, make sure to zip them all! Name the zipped file app1a_lastname_firstname.zip and submit it on canvas.
+We need both of these, make sure to zip them all! Name the zipped file app2a_lastname_firstname.zip and submit it on canvas.
 
 Late submissions will be graded according to the policy described in Lecture 0. Please submit by the deadline!
 
