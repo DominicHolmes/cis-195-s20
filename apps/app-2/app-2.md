@@ -107,3 +107,99 @@ Late submissions will be graded according to the policy described in Lecture 0. 
 # End of Part A
 SUBMIT YOUR WORK TO THIS POINT on Canvas by Thursday, February 6th at **4:20pm**. Warning: missing this deadline will result in a late grade. Part B will be released on February 6th.
 ---
+
+# Part B: Toe
+
+What follows will be more open-ended than Part A.
+
+Now that you've created the game’s UI in your storyboard and hooked up your UI to ViewController.swift, it is time to think about the infrastructure required to maintain the game’s state. For example:
+* How do you plan to keep track of whose turn it is (Player X or Player O)?
+* How many states can a block in a grid have? An example of a state is that “the block is currently occupied by an X”. How do you plan to represent these states given all the data structures you have learned?
+Hint: A block should have 3 possible states.
+* A grid is made up of 9 blocks. How do we maintain the state of the grid? 
+* When, and how do you check if the game has been won (and by whom) or drawn?
+* How should we update the interface when the game is won?
+
+## Game logic
+* If you think of the game as two players playing on one device, player 1 should tap on an empty block first to produce an X.
+* Player 2 would then tap on another empty grid to produce an O. (What should happen if a player taps on an occupied block? Be sure to handle this.)
+* The game is completed when:
+* * Player X makes a move that results in Player X winning the game.
+* * Player O makes a move that results in Player O winning the game.
+* * Player X or O occupies the last empty block in the grid, such that neither of them has achieved a winning combination, therefore resulting in a draw.
+* A complete game would not allow any more moves from either player for that round.
+* Observe in the screenshots that there is a ‘status message’ that displays whose turn it is. At the beginning of the game, this should say "Player 1's Turn". When the game is complete, the label should say "Player _ Wins" in the case of a win, or "Draw" in the case of a draw. The label color should turn to green when a player wins.
+
+## Winning Combinations
+Let’s imagine that the blocks of tic-tac-toe grid are numbered as follows:
+```
+0   1   2
+3   4   5
+6   7   8
+```
+
+Then we can say that a player (X or O) has won, if the user has conquered any one of the following combinations of blocks:
+`[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [2, 4, 6], [0, 4, 8]`
+
+To find a winner, consider checking against these combinations after every move.
+
+## After Each Move
+When a user taps on a block in your tic-tac-toe grid, you would want to do the following:
+* Update the underlying data structure that maintains the ‘state’ of each block in the grid.
+* Update the UI to reflect this change in your data structure
+* Check for the grid contains a winning combination.
+
+## Reset Button
+Recall (from the screenshots at the beginning of this document) that the app contains a ‘Reset’ button to reset the state of the tic-tac-toe game. This feature is useful for when the players want to restart a game, or start a new one. Implementing this feature would entail:
+
+* Resetting the tic-tac-toe grid. 
+* Hint: Given that the X’s and O’s on the grid are represented by custom images, what value must you set these images to, such that they are in an ‘blank’ or ‘unset’ or ‘none’ state?)
+* Hint: Resetting the blocks of the tic-tac-toe grid would require having object references to them in code (a.k.a. IBOutlets). Use the IBOutletCollection you created in Part A.
+* Resetting the ‘status message’ to say “Player 1's Turn” and be black (not green!)
+* Resetting a game board should not reset the scoreboard!
+
+## Update the Scoreboard
+Recall (from the screenshots) that the game contains a scoreboard that maintains the scores for Player 1 (X) and Player 2 (O). This feature allows the players to compare their ‘number of victories’ across multiple games. You should create properties to maintain the scores, and update these properties and the UI when a player wins.
+
+Hint: Can you use *property observers* to make your code more elegant?
+
+## Button Shading
+When a player wins the game, we want to "highlight" the winning combination by coloring those buttons yellow. When a draw occurs, we want to shade all the game buttons gray.
+
+Sounds easy enough, but I provided you with .png images - how do we shade them a different color? The answer is to use a different rendering mode in our UIImage:
+```
+let buttonImage = UIImage(named: "...")?.withRenderingMode(.alwaysTemplate)
+
+// Set the button's image with button.setImage(...)
+```
+
+Now that the image is a "template", xcode will render it as the button's tint color. Any `tintColor` we assign to the *button* will change the image color. `myButton.tintColor = .systemYellow` will color the button yellow, for example.
+
+Using `.tintColor`, make your buttons colored `systemBlue` by default. When a button is part of a winning combination, make it `systemYellow`. When a button is part of a draw, make it `systemGray`.
+
+## Polish
+We'll add two elements of polish to the app to make it a little more delightful: haptic and audio feedback.
+
+Haptic feedback refers to the vibrations you feel in your phone when a notification arrives, or when you scroll through a picker view. We can add haptics to our own app very easily:
+* Add the following to your view controller: `let hapticEngine = UIImpactFeedbackGenerator()`.
+* Whenever a *game button* is pressed, trigger a slight vibration with `hapticEngine.impactOccured().`
+* You'll only be able to test this feature if you run on an actual device! I encourage you to do so.
+
+Our audio feedback will consist of "victory" music for when a player wins, and "sad" music when a player loses. Both sounds are very short (a few seconds) and are stored as .wav files.
+* Download the audio files [here](/apps/app-2/assets/app-2-sounds.zip) and drag them into your Xcode project.
+* Use [this tutorial](https://www.hackingwithswift.com/example-code/media/how-to-play-sounds-using-avaudioplayer) to play audio sounds in your app.
+* `victory.wav` should be played when the game is won by a player.
+* `draw.wav` should be played if there is a draw.
+* Sounds play through both the simulator and the phone.
+
+## Submission
+Zip your *entire project folder*. Do this in the Finder by finding the **highest level folder** named "app1_lastname_firstname" and zipping that. This folder should include **both** the .xcproject file and a subfolder also named "app1_lastname_firstname". 
+
+We need both of these, make sure to zip them all! Name the zipped file app1b_lastname_firstname.zip and submit it on canvas.
+
+Late submissions will be graded according to the policy described in Lecture 1. Please submit by the deadline!
+
+---
+# End of Part B
+SUBMIT YOUR WORK TO THIS POINT on Canvas by Thursday, February 13th at **4:20pm**.
+---
