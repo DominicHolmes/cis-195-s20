@@ -182,7 +182,7 @@ We'll add two elements of polish to the app to make it a little more delightful:
 
 Haptic feedback refers to the vibrations you feel in your phone when a notification arrives, or when you scroll through a picker view. We can add haptics to our own app very easily:
 * Add the following to your view controller: `let hapticEngine = UIImpactFeedbackGenerator()`.
-* Whenever a *game button* is pressed, trigger a slight vibration with `hapticEngine.impactOccured().`
+* Whenever a *game button* is pressed, trigger a slight vibration with `hapticEngine.impactOccurred().`
 * You'll only be able to test this feature if you run on an actual device! I encourage you to do so.
 
 Our audio feedback will consist of "victory" music for when a player wins, and "sad" music when a player loses. Both sounds are very short (a few seconds) and are stored as .wav files.
