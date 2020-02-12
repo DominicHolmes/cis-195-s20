@@ -147,7 +147,7 @@ To find a winner, consider checking against these combinations after every move.
 When a user taps on a block in your tic-tac-toe grid, you would want to do the following:
 * Update the underlying data structure that maintains the ‘state’ of each block in the grid.
 * Update the UI to reflect this change in your data structure
-* Check for the grid contains a winning combination.
+* Check for if the grid contains a winning combination.
 
 ## Reset Button
 Recall (from the screenshots at the beginning of this document) that the app contains a ‘Reset’ button to reset the state of the tic-tac-toe game. This feature is useful for when the players want to restart a game, or start a new one. Implementing this feature would entail:
