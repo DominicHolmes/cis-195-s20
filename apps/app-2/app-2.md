@@ -147,7 +147,7 @@ To find a winner, consider checking against these combinations after every move.
 When a user taps on a block in your tic-tac-toe grid, you would want to do the following:
 * Update the underlying data structure that maintains the ‘state’ of each block in the grid.
 * Update the UI to reflect this change in your data structure
-* Check for the grid contains a winning combination.
+* Check for if the grid contains a winning combination.
 
 ## Reset Button
 Recall (from the screenshots at the beginning of this document) that the app contains a ‘Reset’ button to reset the state of the tic-tac-toe game. This feature is useful for when the players want to restart a game, or start a new one. Implementing this feature would entail:
@@ -182,10 +182,10 @@ We'll add two elements of polish to the app to make it a little more delightful:
 
 Haptic feedback refers to the vibrations you feel in your phone when a notification arrives, or when you scroll through a picker view. We can add haptics to our own app very easily:
 * Add the following to your view controller: `let hapticEngine = UIImpactFeedbackGenerator()`.
-* Whenever a *game button* is pressed, trigger a slight vibration with `hapticEngine.impactOccured().`
+* Whenever a *game button* is pressed, trigger a slight vibration with `hapticEngine.impactOccurred().`
 * You'll only be able to test this feature if you run on an actual device! I encourage you to do so.
 
-Our audio feedback will consist of "victory" music for when a player wins, and "sad" music when a player loses. Both sounds are very short (a few seconds) and are stored as .wav files.
+Our audio feedback will consist of "victory" music for when a player wins, and "draw" music when the game is a draw. Both sounds are very short (a few seconds) and are stored as .wav files.
 * Download the audio files [here](/apps/app-2/assets/app-2-sounds.zip) and drag them into your Xcode project.
 * Use [this tutorial](https://www.hackingwithswift.com/example-code/media/how-to-play-sounds-using-avaudioplayer) to play audio sounds in your app.
 * `victory.wav` should be played when the game is won by a player.
