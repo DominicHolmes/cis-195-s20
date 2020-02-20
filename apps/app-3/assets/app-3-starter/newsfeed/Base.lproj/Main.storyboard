@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="otj-wh-ov4">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="otj-wh-ov4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Newsfeed-->
         <scene sceneID="qUO-yj-ITG">
             <objects>
-                <tableViewController title="Newsfeed" id="otj-wh-ov4" customClass="NewsfeedTableViewController" customModule="app_2_newsfeed" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Newsfeed" id="otj-wh-ov4" customClass="NewsfeedTableViewController" customModule="newsfeed" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KlL-7a-b1A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GJ2-Nc-6kj">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GJ2-Nc-6kj" id="lmO-M2-vKw">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -39,6 +38,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P6u-th-UH9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="720" y="184"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="i3D-Bb-wMV">
+            <objects>
+                <viewController id="yaN-Ml-4Oc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FMq-4C-Bb3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJo-Gh-kyo">
+                                <rect key="frame" x="239" y="712" width="129" height="128"/>
+                                <color key="backgroundColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="Ejv-bF-Jrb"/>
+                                    <constraint firstAttribute="height" constant="128" id="wRb-ss-rZB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="X3G-t3-TjK" firstAttribute="bottom" secondItem="JJo-Gh-kyo" secondAttribute="bottom" constant="22" id="9uP-pY-8mB"/>
+                            <constraint firstItem="X3G-t3-TjK" firstAttribute="trailing" secondItem="JJo-Gh-kyo" secondAttribute="trailing" constant="46" id="lSB-E2-aHD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X3G-t3-TjK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wlj-1n-0yl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1611.5942028985507" y="126.5625"/>
         </scene>
     </scenes>
 </document>
