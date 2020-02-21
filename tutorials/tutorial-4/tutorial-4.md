@@ -32,7 +32,7 @@ The UINavigationController is one of the most important classes in UIKit, used i
 
 Read: [Apple Developer Documentation on UINavigationController](https://developer.apple.com/documentation/uikit/uinavigationcontroller) up to State Preservation. Don't worry if you don't understand all the concepts presented.
 
-By now, you should have realized that you’ve interacted with Navigation Controllers in almost every app on your iPhone. Optionally, you can read through [this tutorial](https://webcache.googleusercontent.com/search?q=cache:NLslyoKjFlsJ:https://www.simplifiedios.net/ios-uinavigationcontroller-tutorial/+&cd=4&hl=en&ct=clnk&gl=us&client=safari) to see how navigation controllers are implemented in storyboards.
+By now, you should have realized that you’ve interacted with Navigation Controllers in almost every app on your iPhone. Optionally, you can read through [this tutorial](https://guides.codepath.com/ios/Navigation-Controller-Quickstart#step-1-embed-root-view-controller-inside-a-navigation-controller) to see how navigation controllers are implemented in storyboards. That tutorial also includes the "programmatic" (non-storyboard) way to do this, feel free to ignore that section.
 
 ## Unwind Segues
 Unwind segues are quite useful when you want to go back many scenes at once in a navigation stack.
