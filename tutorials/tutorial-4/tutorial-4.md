@@ -41,6 +41,6 @@ Unwind segues are quite useful when you want to go back many scenes at once in a
 
 ## Submission
 * Create an app that contains two view controllers, such that clicking on a button in the initial view controller segues to the second view controller. Make use of a Navigation Controller to embed these two view controllers in a navigation stack. The optional tutorial above is useful if you have trouble with this.
-* Compress the project folder, rename it to `tutorial5_lastname_firstname.zip`, and submit the zipped file on Canvas by the due date.
+* Compress the project folder, rename it to `tutorial4_lastname_firstname.zip`, and submit the zipped file on Canvas by the due date.
 
 
