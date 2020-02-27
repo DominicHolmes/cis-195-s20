@@ -83,7 +83,7 @@ Finally, we're going to allow interaction with our ImageView. Users will be able
         + You'll also have to set `imageView.clipsToBounds = true`
 * Now, we'll create the image picker delegate methods.
     - In the definition line of your ViewController class, add protocol conformance to `UIImagePickerControllerDelegate` and `UINavigationControllerDelegate`. These conformances will come after the `UIViewController` conformance.
-    - Add the delegate function `imagePickerController(_ picker:didFinishPickingMediaWithInfo)`. Notice we do NOT use "override func" in this case, just "func". (Why not?)
+    - Add the delegate function `imagePickerController(_:didFinishPickingMediaWithInfo:)`. Notice we do NOT use "override func" in this case, just "func". (Why not?)
     - Inside the delegate function (this is called when an image is picked), you can access the picked image by unwrapping it: `if let selectedImage = info[.originalImage] as? UIImage { ... your code ...}`. Use this unwrapped image to update your image view. Inside that same function, you should call `dismiss(animated: true, completion: nil)` to dismiss the image picker view controller.
     - Your class is now fully compliant with the UIImagePicker delegate methods! Now, we just need to actually *create and present* the picker UI.
 * Create and present the UIImagePickerController
