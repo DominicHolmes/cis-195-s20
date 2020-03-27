@@ -52,8 +52,7 @@ You can complete these requirements roughly in order.
     - Use URLSession.dataTask
     - Use the [API documentation](https://www.nps.gov/subjects/developer/api-documentation.htm) to figure out what endpoint to use
         + Make sure to use your API key in the url
-        + You'll need park image urls as well; figure out how to modify your endpoint to obtain them
-        + Test your url in a browser until you get the results you want
+        + Test your url in a browser to see the response format
 * Codable structs decode the API response
     - Write down what fields you'll need to decode
     - Use a json viewing extension in Chrome/Safari to understand the response structure
