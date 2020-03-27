@@ -41,8 +41,7 @@ Tapping on a cell brings the user to another screen, which contains a large vers
 ![](/apps/app-6/assets/fig2.png?raw=true)
 
 ## Getting Started
-* Create an Xcode project named "NationalParks". You should use Storyboards, not SwiftUI.
-* Install the pod Kingfisher by following the instructions in Tutorial 7.
+* Create an Xcode project named "NationalParks". You should use Storyboards, not SwiftUI
 * Visit the [NPS website](https://www.nps.gov/subjects/developer/get-started.htm) to obtain an API key
     - You'll get an email containing your key
 * Feel free to use the [Github Repo project](https://github.com/DominicHolmes/cis-195-s20/tree/master/live-demos/github-trending-repos.zip) I made in class to guide your implementation
