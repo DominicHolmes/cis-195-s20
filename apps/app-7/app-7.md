@@ -34,7 +34,7 @@ Each time an egg is either collected or dropped by a user, the information on th
 Don't worry - Firebase makes this straightforward!
 
 ## Getting Started
-* Download the [starter project](/apps/app-6/assets/egg-hunt.zip?raw=true)
+* Download the [starter project](egg-hunt.zip)
     - Note that Cocoapods has already been used to install the `Firebase/Database` pod
 * Look around and get familiar with the codebase
     - Main.storyboard
@@ -47,7 +47,7 @@ In this project, we'll use **Firebase Realtime Database** to keep track of colle
 * When creating your Database, be sure to start it in *Test Mode*
 * DO NOT use Cloud Firestore. Use Realtime Database.
 
-Now that we've setup the Database, we'll populate our database with the contents of [egg.json](/apps/app-6/assets/eggs.json?raw=true). Download that file, and upload it to your database by following [this guide](https://support.google.com/firebase/answer/6386780?hl=en). The JSON contains a list of *annotation* coordinates - you will use these coordinates to populate the map with egg annotations.
+Now that we've setup the Database, we'll populate our database with the contents of [egg.json](eggs.json). Download that file, and upload it to your database by following [this guide](https://support.google.com/firebase/answer/6386780?hl=en). The JSON contains a list of *annotation* coordinates - you will use these coordinates to populate the map with egg annotations.
 
 The [Firebase documentation](https://firebase.google.com/docs/database/ios/read-and-write) should be used to complete this app.
 
