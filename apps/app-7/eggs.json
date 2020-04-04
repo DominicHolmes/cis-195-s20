@@ -1,0 +1,46 @@
+{
+    "eggs": [
+    	{
+    		"lat": 39.953,
+    		"long": -75.178,
+            "eggId": 0,
+            "collected": true
+    	},
+        {
+            "lat": 39.956,
+            "long": -75.190,
+            "eggId": 1,
+            "collected": false
+        },
+        {
+            "lat": 39.955,
+            "long": -75.186,
+            "eggId": 2,
+            "collected": false
+        },
+        {
+            "lat": 39.955,
+            "long": -75.197,
+            "eggId": 3,
+            "collected": true
+        },
+        {
+            "lat": 39.9515,
+            "long": -75.200,
+            "eggId": 4,
+            "collected": false
+        },
+        {
+            "lat": 39.948,
+            "long": -75.198,
+            "eggId": 5,
+            "collected": false
+        },
+        {
+            "lat": 39.948,
+            "long": -75.198,
+            "eggId": 6,
+            "collected": false
+        }
+    ]
+}
