@@ -6,7 +6,7 @@ Remember -- Stack Overflow and Google are encouraged, but DO NOT copy code. Idea
 
 **Expected Duration:** 2+ hours
 
-**Deadlines:** Monday, November 11th at **11:59pm**
+**Deadlines:** Friday, April 10th at **11:59pm**
 
 - - - -
 
