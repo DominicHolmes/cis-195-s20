@@ -41,8 +41,7 @@ Tapping on a cell brings the user to another screen, which contains a large vers
 ![](/apps/app-6/assets/fig2.png?raw=true)
 
 ## Getting Started
-* Create an Xcode project named "NationalParks". You should use Storyboards, not SwiftUI.
-* Install the pod Kingfisher by following the instructions in Tutorial 7.
+* Create an Xcode project named "NationalParks". You should use Storyboards, not SwiftUI
 * Visit the [NPS website](https://www.nps.gov/subjects/developer/get-started.htm) to obtain an API key
     - You'll get an email containing your key
 * Feel free to use the [Github Repo project](https://github.com/DominicHolmes/cis-195-s20/tree/master/live-demos/github-trending-repos.zip) I made in class to guide your implementation
@@ -53,8 +52,7 @@ You can complete these requirements roughly in order.
     - Use URLSession.dataTask
     - Use the [API documentation](https://www.nps.gov/subjects/developer/api-documentation.htm) to figure out what endpoint to use
         + Make sure to use your API key in the url
-        + You'll need park image urls as well; figure out how to modify your endpoint to obtain them
-        + Test your url in a browser until you get the results you want
+        + Test your url in a browser to see the response format
 * Codable structs decode the API response
     - Write down what fields you'll need to decode
     - Use a json viewing extension in Chrome/Safari to understand the response structure
