@@ -36,6 +36,7 @@ Don't worry - Firebase makes this straightforward!
 ## Getting Started
 * Download the [starter project](egg-hunt.zip)
     - Note that Cocoapods has already been used to install the `Firebase/Database` pod
+* Note that because we have installed Cocoapods, **you must use the .xcodeworkspace** file instead of the .xcodeproj file
 * Look around and get familiar with the codebase
     - Main.storyboard
     - ViewController.swift
